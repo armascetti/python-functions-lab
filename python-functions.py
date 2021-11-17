@@ -33,3 +33,10 @@ def occurances(str1, str2):
 # Challenge 4 
 #Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
 
+def product(*args):
+  product = 1 
+  for arg in args: 
+    product *= arg
+  return product 
+
+#print("the product is:",  product(3, 4, 6))
